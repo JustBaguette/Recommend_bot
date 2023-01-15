@@ -1,4 +1,0 @@
-As These files were too great in size to be directly uploaded into github, I have uploaded them to Drive instead , 
-download them and place them inside folder to make the program workable 
-
-https://drive.google.com/drive/folders/1LsoiC_6zGXetBy8oPrbz0X2xZ9ik3I9T?usp=share_link 
