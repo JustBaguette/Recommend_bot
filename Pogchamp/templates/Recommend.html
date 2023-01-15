@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>The CreAItive Library</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        li{
+            font-size: 30px;
+        }
+        a{
+            color: #CBBBA7;
+        }
+        .Login{
+            text-align: right;
+            
+        }
+        .Rec_books{
+             text-align: center;
+             background-color: #CCBCA8;
+             width: 1800px;
+             border: 15px solid #864F48;
+             padding: 50px;
+             margin: 20px;
+
+        }
+        
+
+    </style>
+
+</head>
+<body style="background-color: #FFF5DA;">
+  
+    <h1 style="text-align-last: center;">The CreAItive Library</h1>
+    <nav class="navbar" style="background-color:#864F48">
+        <a class="navbar-brand" style="font-size: 30px;">Welcome</a>
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/recommend_content">Recommend</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <h3>Enter recently read book here</h3>
+            <form action="/recommend_books" method="post">
+                <input name="user_input" type="text" class="form-control"><br>
+                <input type="submit" class="btn btn-lg btn-warning">
+            </form>
+            {% if book %}
+                <h2 style="margin-bottom:100px ;">Here are our recommendations</h2>
+                <div>
+                    {% for i in book %}
+                        <div class = "col-md-3">
+                                <div class = "card">
+                                    <div class = "card-body" style="margin-bottom: 100px;, margin-right:200px;">
+                                        <img class="card-img-top" src="{{i[2]}}" alt="{{i[0]}}">
+                                        <h3 class = "text_color">{{i[0]}}</h3>
+                                        <h3 class = "text_color">{{i[1]}}</h3>
+                                    </div>
+                                </div>
+                        </div> 
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+        
+
+
+</body>
+</html>
