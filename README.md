@@ -1,7 +1,8 @@
 # Recommend_bot
 Steps before running the model
-In order to run this model open the pogchamp file
-In there there will be a text file with a google drive link , download the 2 pickle files so that the rest of the program can work as intended
+In order to run this model Open the link below and download the two pickle (.pkl) files
+https://drive.google.com/drive/folders/1LsoiC_6zGXetBy8oPrbz0X2xZ9ik3I9T?usp=share_link
+so that the rest of the program can work as intended
 Steps for running the model 
 Once downloaded place it in the root folder when running pog.py
 when you run the code in pog.py it should give a https link which once used in a browser should lead you to the CreAItive library
